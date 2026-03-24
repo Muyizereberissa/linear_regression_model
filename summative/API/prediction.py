@@ -51,7 +51,6 @@ class ClimateInput(BaseModel):
     Extreme_Weather: int = Field(..., ge=0, le=1000)
     Forest: float = Field(..., ge=0, le=100)
 
-
 @app.post("/predict")
 def predict(data: ClimateInput):
     global model, scaler
@@ -80,7 +79,6 @@ def retrain_model(payload: RetrainInput):
     from sklearn.linear_model import LinearRegression
     from sklearn.preprocessing import StandardScaler
 
-
     df = pd.DataFrame([vars(d) for d in payload.data])
     y = pd.Series(payload.target)
 
@@ -90,7 +88,7 @@ def retrain_model(payload: RetrainInput):
     model = LinearRegression()
     model.fit(X_scaled, y)
 
- 
+
     joblib.dump(model, MODEL_PATH)
     joblib.dump(scaler, SCALER_PATH)
 
