@@ -5,7 +5,6 @@ import 'package:http/http.dart' as http;
 void main() {
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,12 +19,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class PredictionPage extends StatefulWidget {
   @override
   _PredictionPageState createState() => _PredictionPageState();
 }
-
 class _PredictionPageState extends State<PredictionPage> {
   final co2Controller = TextEditingController();
   final seaLevelController = TextEditingController();
@@ -103,7 +100,6 @@ class _PredictionPageState extends State<PredictionPage> {
       });
     }
   }
-
   Widget buildTextField(String label, String unit, TextEditingController controller) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6.0),
