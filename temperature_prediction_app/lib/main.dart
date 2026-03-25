@@ -76,9 +76,6 @@ class _PredictionPageState extends State<PredictionPage> {
         }),
       );
 
-      print("STATUS: ${response.statusCode}");
-      print("BODY: ${response.body}");
-
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
@@ -93,7 +90,6 @@ class _PredictionPageState extends State<PredictionPage> {
       setState(() {
         result = " Error: $e";
       });
-      print(e);
     } finally {
       setState(() {
         isLoading = false;
