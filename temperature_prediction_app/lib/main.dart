@@ -79,7 +79,7 @@ class _PredictionPageState extends State<PredictionPage> {
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
-          result = "🌡 Predicted Temperature: ${data['predicted_temperature'].toStringAsFixed(2)} °C";
+          result = "Predicted Temperature: ${data['predicted_temperature'].toStringAsFixed(2)} °C";
         });
       } else {
         setState(() {
