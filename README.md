@@ -11,7 +11,7 @@
 
 ##  Public API Endpoint
 
-🔗 https://temperature-prediction-j6aq.onrender.com/
+🔗 [Temperature Prediction API](https://temperature-prediction-j6aq.onrender.com/)
 
 Use the `/predict` endpoint to send input data and receive predicted temperature values.  
 The API is testable using Swagger UI.
@@ -23,7 +23,7 @@ This allows the model to improve over time and adapt to new patterns.
 
 ##  Video Demo
 
-https://youtu.be/XwrLQPijWTs
+🔗 [Watch Demo on YouTube](https://youtu.be/XwrLQPijWTs)
 
 ---
 
