@@ -7,17 +7,29 @@ void main() {
 }
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Climate Predictor',
-      theme: ThemeData(
-        primaryColor: Color(0xFF0A1F44),
-        scaffoldBackgroundColor: Color(0xFFFFC0CB),
+ Widget build(BuildContext context) {
+  return MaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: 'Climate Predictor',
+    theme: ThemeData(
+      primaryColor: Color(0xFF0A1F44),
+      scaffoldBackgroundColor: Color(0xFFFFC0CB),
+
+      appBarTheme: AppBarTheme(
+        backgroundColor: Color(0xFF0A1F44), 
+        titleTextStyle: TextStyle(
+          color: Colors.white, 
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+        iconTheme: IconThemeData(
+          color: Colors.white, 
+        ),
       ),
-      home: PredictionPage(),
-    );
-  }
+    ),
+    home: PredictionPage(),
+  );
+}
 }
 class PredictionPage extends StatefulWidget {
   @override
@@ -152,7 +164,7 @@ class _PredictionPageState extends State<PredictionPage> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: Text("Predict", style: TextStyle(fontSize: 18)),
+                        child: Text("Predict", style: TextStyle(fontSize: 18, color: Colors.white)),
                       ),
 
                 SizedBox(height: 20),
