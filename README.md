@@ -23,6 +23,7 @@ This allows the model to improve over time and adapt to new patterns.
 
 ##  Video Demo
 
+https://youtu.be/XwrLQPijWTs
 
 ---
 
