@@ -3,8 +3,14 @@
 ## Mission statement
 - To harness the power of technology to create practical, sustainable solutions that combat climate change, reduce environmental harm, and promote a future where both people and the planet can thrive.
 
+## Dataset
+
+- The dataset used is a Climate Change Indicators dataset containing environmental and socio-economic variables such as CO2 emissions, sea level rise, rainfall, population, renewable energy usage, and forest area.
+
+  Dataset:(https://www.kaggle.com/datasets/bhadramohit/climate-change-dataset)
 
 ##  Public API Endpoint
+
 🔗 https://temperature-prediction-j6aq.onrender.com/
 
 Use the `/predict` endpoint to send input data and receive predicted temperature values.  
