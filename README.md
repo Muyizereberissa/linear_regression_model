@@ -31,7 +31,7 @@ This allows the model to improve over time and adapt to new patterns.
 
 1. Navigate to the Flutter app folder:
    ```bash
-   cd summative/FlutterApp
+   cd summative/temperature_prediction_a]
 
 2. Install dependencies:
    ```bash
